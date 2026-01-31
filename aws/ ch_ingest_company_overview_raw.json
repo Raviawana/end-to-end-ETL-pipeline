@@ -1,0 +1,34 @@
+{
+  "name" : " ch_ingest_company_overview_raw",
+  "jobMode" : "SCRIPT",
+  "description" : "",
+  "role" : "arn:aws:iam::218337436828:role/GlueS3LambdaRedshiftRole",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "pythonshell",
+    "scriptLocation" : "s3://aws-glue-assets-218337436828-eu-north-1/scripts/ ch_ingest_company_overview_raw.py",
+    "pythonVersion" : "3.9"
+  },
+  "defaultArguments" : {
+    "--COMPANIES_HOUSE_API_KEY" : "b6cba112-1576-4755-a6a8-7868817d9f75",
+    "--enable-job-insights" : "false",
+    "--enable-observability-metrics" : "false",
+    "--enable-glue-datacatalog" : "true",
+    "library-set" : "analytics",
+    "--job-language" : "python",
+    "--TempDir" : "s3://aws-glue-assets-218337436828-eu-north-1/temporary/"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 0,
+  "timeout" : 2880,
+  "maxCapacity" : 0.0625,
+  "glueVersion" : "3.0",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "end-to-end-ETL-pipeline",
+    "branch" : "main",
+    "folder" : "aws"
+  }
+}
