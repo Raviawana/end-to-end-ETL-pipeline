@@ -1,0 +1,17 @@
+{
+  "catalog": "companies-data",
+  "bronze_schema": "bronze",
+  "silver_schema": "silver",
+
+  "bronze_tables": {
+    "overview": "overview",
+    "officers": "officers",
+    "filing_history": "filing_history"
+  },
+
+  "silver_tables": {
+    "company_master": "company_master"
+  },
+
+  "partition_column": "company_status"
+}
