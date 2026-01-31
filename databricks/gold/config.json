@@ -1,0 +1,8 @@
+{
+  "catalog": "companies-data",
+  "silver_schema": "silver",
+  "gold_schema": "gold",
+  "tables": [
+    "company_master"
+  ]
+}
