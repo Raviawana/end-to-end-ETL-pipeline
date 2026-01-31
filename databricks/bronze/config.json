@@ -1,0 +1,24 @@
+{
+  "catalog": "companies-data",
+  "schema": "bronze",
+  "base_path": "/Volumes/companies-data/bronze/ingestion_raw/companies_house",
+  "tables": [
+    {
+      "name": "overview",
+      "file": "overview.json",
+      "explode": false
+    },
+    {
+      "name": "officers",
+      "file": "officers.json",
+      "explode": true,
+      "explode_column": "items"
+    },
+    {
+      "name": "filing_history",
+      "file": "filing-history.json",
+      "explode": true,
+      "explode_column": "items"
+    }
+  ]
+}
