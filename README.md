@@ -17,7 +17,7 @@ The pipeline is:
 ---
 
 ## Architecture
-
+```
 Raw Files (JSON / CSV)
 ↓
 Bronze Layer (Raw + Schema Applied)
@@ -25,7 +25,7 @@ Bronze Layer (Raw + Schema Applied)
 Silver Layer (Cleaned, Enriched, SCD2)
 ↓
 Gold Layer (Analytics & BI Ready)
-
+```
 ---
 
 ## 📁 Folder Structure
