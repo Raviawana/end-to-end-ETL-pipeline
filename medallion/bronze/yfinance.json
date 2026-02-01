@@ -1,0 +1,19 @@
+{
+  "catalog": "companies-data",
+  "schema": "bronze",
+  "base_path": "/Volumes/companies-data/bronze/ingestion_raw/yfinance",
+  "tables": [
+    {
+      "name": "company_details",
+      "path": "company_details"
+    },
+    {
+      "name": "fundamentals_data",
+      "path": "fundamentals_data"
+    },
+    {
+      "name": "trading_data",
+      "path": "trading_data"
+    }
+  ]
+}
