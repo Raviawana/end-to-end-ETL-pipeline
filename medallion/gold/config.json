@@ -2,7 +2,32 @@
   "catalog": "companies-data",
   "silver_schema": "silver",
   "gold_schema": "gold",
-  "tables": [
-    "company_master"
+
+  "promote_tables": [],
+
+  "dimensions": [
+    {
+      "name": "dim_company",
+      "source_table": "company_details"
+    },
+    {
+      "name": "dim_company_profile",
+      "source_table": "company_master"
+    }
+  ],
+
+  "facts": [
+    {
+      "name": "fact_fundamentals",
+      "source_table": "fundamentals_data",
+      "date_column": "quarter_end_date",
+      "partition_by": ["quarter_end_date"]
+    },
+    {
+      "name": "fact_trading",
+      "source_table": "trading_data",
+      "date_column": "date",
+      "partition_by": ["date"]
+    }
   ]
 }
