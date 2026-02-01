@@ -101,9 +101,6 @@ def run(config_path: str):
     logger.info("Metadata-Driven Bronze Pipeline Completed Successfully")
 
 
-# =========================
-# OPTIONAL CLI ENTRY POINT
-# =========================
 if __name__ == "__main__":
     import sys
     if len(sys.argv) != 2:
