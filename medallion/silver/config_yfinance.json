@@ -1,0 +1,59 @@
+{
+  "catalog": "companies-data",
+  "bronze_schema": "bronze",
+  "silver_schema": "silver",
+  "tables": [
+    {
+      "name": "company_details",
+      "business_key": ["company_number"],
+      "hash_column": "row_hash",
+      "tracked_columns": [
+        "company_name",
+        "ticker",
+        "symbol",
+        "short_name",
+        "long_name",
+        "industry",
+        "sector",
+        "country",
+        "exchange",
+        "market_cap",
+        "website"
+      ]
+    },
+    {
+      "name": "fundamentals_data",
+      "business_key": ["company_number", "quarter_end_date"],
+      "hash_column": "row_hash",
+      "tracked_columns": [
+        "ticker",
+        "total_revenue",
+        "gross_profit",
+        "operating_income",
+        "net_income",
+        "ebitda",
+        "total_assets",
+        "total_liabilities",
+        "cash",
+        "long_term_debt",
+        "operating_cash_flow",
+        "capital_expenditure",
+        "free_cash_flow"
+      ]
+    },
+    {
+      "name": "trading_data",
+      "business_key": ["company_number", "date"],
+      "hash_column": "row_hash",
+      "tracked_columns": [
+        "ticker",
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj_close",
+        "volume"
+      ]
+    }
+  ]
+}
