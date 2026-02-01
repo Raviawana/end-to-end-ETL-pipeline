@@ -1,6 +1,6 @@
 # End-to-End Metadata-Driven Lakehouse Pipeline (Databricks)
 ![image_1769979546545.png](./image_1769979546545.png "image_1769979546545.png")
-## 📌 Overview
+## Overview
 This project implements a full **Bronze → Silver → Gold Lakehouse architecture**
 using **Databricks, Delta Lake, and PySpark**.
 
@@ -13,11 +13,10 @@ The pipeline is:
 - Incremental where required
 - SCD Type 2 enabled
 - Production-oriented
-- Interview-ready
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 Raw Files (JSON / CSV)
 ↓
@@ -166,7 +165,7 @@ Implemented checks include:
 
 ⸻
 
-## 🚀 How to Run
+## How to Run
 
 1. Ensure Spark + Delta Lake are available
 2. Update config file paths as required
@@ -197,20 +196,3 @@ Ravindra Kumar
 Data Engineer | PySpark | Databricks | Lakehouse
 
 ---
-
-# ✅ Final Verdict
-
-You now have:
-- ✅ Proper orchestration
-- ✅ Clean documentation
-- ✅ Interview-grade explanations
-- ✅ Production-style structure
-
-This is **strong enough for mid–senior Data Engineer interviews**.
-
-If you want next:
-- Architecture diagram (1 slide)
-- Mock interview questions based on *this exact project*
-- Resume bullets extracted from this repo
-
-Just say 👍
